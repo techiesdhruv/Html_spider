@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- Tables in html
+ tables is a logical organisation of date consist of rows and columns.
+ 
+ Use tags to create table
+ 
+ <table>    Table element
+<th>        Table head
+<tr>        Table row
+<td>        Table data
+<thead>     it is just a container for heading
+<tbody>     it is container for body tag
+    -->
+
+    <table border="2px solid" cellspacing="10px" cellpadding="2">
+        <!--  cell spacing attribute used to provide the space between the cells 
+          cell pdding attributes provide space inside the cell
+          cell spacing and cell padding we can use it only in table tag
+          -->
+       <thead>
+        <tr>
+            <th>Time</th>
+            <th colspan="4">Subjects</th>
+                        <!-- colspan attribute is used to merge 2 or more columens
+            rowspan and colspan attributes we can use them only in th and td . we can used in tr and table tag -->
+
+        </tr>
+       </thead>
+       <!-- thead is the wraper for table heading when we scrol down or up then this heading will fixed -->
+        
+       <tbody>
+        <tr>
+            <th>10 to 12 AM</th>
+            <td rowspan="2">SQL</td>
+            <td rowspan="2">webtech</td>
+            <td>Python</td>
+            <td>java</td>
+        </tr>
+        <tr>
+            <th>12 to 2 PM</th>
+            <!-- <td>SQL</td>         (for using rowspan we commited this)        -->
+            <!-- <td>webtech</td>    (for using rowspan we commited this) -->
+            <td>java</td>
+            <td rowspan="2">Python</td>
+        </tr>
+        <tr>
+            <th>2 to 4 PM</th>
+            <td>webtech</td>
+            <td>java</td>
+            <td>SQL</td>
+            <!-- <td>Python</td>  (for using rowspan we commited this)--> 
+        </tr>
+        <tr>
+            <th>4 to 6 PM</th>
+            <td>Python</td>
+            <td>webtech</td>
+            <td>java</td>
+            <td>SQL</td>
+        </tr>
+       </tbody>
+    </table>
+
+
+    <table border="1px solid">
+        <tr>
+            <th colspan="6">Time Table</th>
+        </tr>
+        <tr>
+            <th rowspan="6">Hours</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+
+        </tr>
+        <tr>
+            <td>science</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+
+        </tr>
+
+        <tr>
+            <td>science</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+
+        </tr>
+        <tr>
+
+            <th colspan="6">lunch</th>
+        
+        </tr>
+        <tr>
+            <td>science</td>
+            <td>maths</td>
+            <td>science</td>
+            <td>Maths</td>
+            <td  rowspan="2">project</td>
+
+        </tr>
+
+        <tr>
+            
+            <td>social</td>
+            <td>history</td>
+            <td>enlish</td>
+            <td>social</td>
+            
+        </tr>
+    </table>
+
+</body>
+</html>
