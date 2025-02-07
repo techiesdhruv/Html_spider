@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form tag -->
+
+<form action="" method=""></form>
+
+<!-- method attribute= method attribute specify the activity perform on the form. 
+       2 type of activity present
+       get, post
+       
+           this are optional because bydefault the action is get method
+       get= we want the access the data
+       post= we are sending data to the  specific server
+       
+       
+       
+ action attributes: action attributes is used to define the address of server file where we want to send this data to specific file/server
+                   
+  -->
+    
+
+<!-- label tag = for providing label -->
+
+<form action="">
+<div>
+        
+    <label for="Username">Username</label>
+    <input type="text" name="" id="Username">
+
+    <!-- FOR attribute: to make a relation between label and input tag we used this for attribute in simple word if wants to click anywhere and target will be the box/input then we required some relation between the label tag and input tag. 
+     in this we have to give the some name in (for) attribute and these name will copy in id section of input tag section   -->
+
+</div>
+    
+<div>
+        <label for="">Password</label>
+        <input type="password" name="" id="">
+
+</div>
+
+
+ <!-- types of input filed -->
+<!-- 
+ 1. `<input type="text">`  
+ 2. `<input type="password">`  
+ 3. `<input type="email">`  
+ 4. `<input type="tel">`  
+ 5. `<input type="url">`  
+ 6. `<input type="search">`  
+ 7. `<input type="number">`  
+ 8. `<input type="date">`  
+ 9. `<input type="datetime-local">`  
+ 10. `<input type="month">`  
+ 11. `<input type="week">`  
+ 12. `<input type="time">`  
+ 13. `<input type="color">`  
+ 14. `<input type="range">`  
+ 15. `<input type="checkbox">`  
+ 16. `<input type="radio">`  
+ 17. `<input type="file">`  
+ 18. `<input type="hidden">`  
+ 19. `<input type="image" src="submit.png">`  
+ 20. `<input type="submit" value="Submit">`  
+ 21. `<input type="reset" value="Reset">`  
+ 22. `<input type="button" value="Click Me">`  
+  -->
+
+ 
+
+ <div>
+    <label for="">Contact number:</label>
+    <input type="tel" name="" id="">
+ </div>
+
+
+<div>
+    <label for="">Gender:</label>
+
+    <label for="">Male</label>
+    <input type="radio" name="gender" id="">
+    <label for="">Female</label>
+    <input type="radio" name="gender" id="">
+
+    <label for="">Other</label>
+    <input type="radio" name="gender" id="">
+
+    <!-- for making the radio button for only single click we have to use the same name for the name attribute in the input tag as we have used gender name same in all 3 option -->
+</div>
+
+<div>
+      <label for="">Select Subjects : </label>
+      <!-- <input type="checkbox" name="" id=""> -->
+
+      <label for="java">java</label>
+      <input type="checkbox" name="" id="java">
+
+      <label for="html1">html</label>
+      <input type="checkbox" name="" id="html1">
+
+      <label for="">Python</label>
+      <input type="checkbox" name="" id="">
+</div>
+
+
+
+<div>
+    <!-- select tag is used to create dropdown in select tage we provide the option we have to use option tag -->
+
+    <label for="">Select the City : </label>
+
+    <select name="" id="">
+           <option value="">Gurugram</option>
+           <option value="">delhi</option>
+           <option value="">Morena</option>
+           <option value="">Gwalior</option>
+           <option value="">jhansi</option>
+           <option value="">Bombay</option>
+
+    </select>
+</div>
+
+
+
+ <div>
+<!-- <textarea  tag are used to create the multi line input field. -->
+
+     <label for="">Address : </label>
+     <textarea name="" id="" rows="5" cols="20"></textarea>
+
+ </div>
+
+
+<!-- for range -->
+ 
+<div>
+    <label for="">Sclae yourself in webtech : </label>
+    <input type="range" name="" id="">
+
+ </div>
+ 
+
+ <!-- for Profile color -->
+  <div>
+       <label for=""> Choose your profile color: </label>
+       <input type="color" name="" id="">
+
+  </div>
+
+
+<!-- dob -->
+
+<div>
+
+    <label for="">DOB :</label>
+
+    <input type="date" name="" id="">
+
+    <input type="datetime" name="" id="">
+
+    <input type="datetime-local" name="" id="">
+
+</div>
+
+
+<!-- for uploading -->
+
+    <div>
+        <label for="">Upload Your Resume : </label>
+        
+        <input type="file" name="" id="">
+
+
+
+
+    </div>
+
+
+
+<!-- for reset and submit -->
+       
+     <div>
+          <input type="reset" value="Reset">
+          <input type="submit" value="Submit">
+     
+     <!-- the default behaviour of form is reloading we use the react for stop the reloading -->
+     
+        </div>
+
+
+
+</form>
+
+
+</body>
+</html>
